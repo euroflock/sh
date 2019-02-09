@@ -56,7 +56,7 @@
 
 	(function AppEntryPoint() {
 		$window = $(window);
-		$root = $('body');
+		$root = $('html, body');
 		$section1 = $('.section.s1');
 		$section2 = $('.section.s2');
 		$section3 = $('.section.s3');
