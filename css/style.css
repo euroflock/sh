@@ -42,6 +42,7 @@ html.ready .content {
 
 .content {
   opacity: 0;
+  overflow: hidden;
 }
 
 .top {
