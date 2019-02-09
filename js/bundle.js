@@ -62,7 +62,7 @@
 		$section3 = $('.section.s3');
 		$section4 = $('.section.s4');
 
-		$root.toggleClass('ready', true);
+		$('html').toggleClass('ready', true);
 		$window.on('scroll', onWindowScroll);
 		$('.apple, .google, .text .button').on('click', function () {
 			$root.animate({ scrollTop: $(document).height() }, 4000);
