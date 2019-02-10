@@ -193,14 +193,6 @@ html.ready .content {
   -o-transform: rotate(-20deg) scale(0.5);
   -webkit-animation: s1p1 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.s1.visible .p1:hover {
-  z-index: 17;
-  transform: rotate(-20deg) scale(0.8);
-  -webkit-transform: rotate(-20deg) scale(0.8);
-  -moz-transform: rotate(-20deg) scale(0.8);
-  -ms-transform: rotate(-20deg) scale(0.8);
-  -o-transform: rotate(-20deg) scale(0.8);
-}
 .s1.visible .p2 {
   animation: s1p2 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-animation: s1p2 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -212,14 +204,6 @@ html.ready .content {
   -ms-transform: scale(0.8);
   -o-transform: scale(0.8);
 }
-.s1.visible .p2:hover {
-  z-index: 17;
-  transform: rotate(0deg) scale(0.9);
-  -webkit-transform: rotate(0deg) scale(0.9);
-  -moz-transform: rotate(0deg) scale(0.9);
-  -ms-transform: rotate(0deg) scale(0.9);
-  -o-transform: rotate(0deg) scale(0.9);
-}
 .s1.visible .p3 {
   animation: s1p3 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-animation: s1p3 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -230,14 +214,6 @@ html.ready .content {
   -moz-transform: rotate(20deg) scale(0.5);
   -ms-transform: rotate(20deg) scale(0.5);
   -o-transform: rotate(20deg) scale(0.5);
-}
-.s1.visible .p3:hover {
-  z-index: 17;
-  transform: rotate(20deg) scale(0.8);
-  -webkit-transform: rotate(20deg) scale(0.8);
-  -moz-transform: rotate(20deg) scale(0.8);
-  -ms-transform: rotate(20deg) scale(0.8);
-  -o-transform: rotate(20deg) scale(0.8);
 }
 
 @keyframes s1p1 {
@@ -311,13 +287,6 @@ html.ready .content {
   -ms-transform: rotate(0deg) scale(0.8);
   -o-transform: rotate(0deg) scale(0.8);
 }
-.s2.visible .p3:hover {
-  transform: rotate(0deg) scale(0.9);
-  -webkit-transform: rotate(0deg) scale(0.9);
-  -moz-transform: rotate(0deg) scale(0.9);
-  -ms-transform: rotate(0deg) scale(0.9);
-  -o-transform: rotate(0deg) scale(0.9);
-}
 
 @keyframes s2p3 {
   from {
@@ -349,13 +318,6 @@ html.ready .content {
   -moz-transform: rotate(0deg) scale(0.8);
   -ms-transform: rotate(0deg) scale(0.8);
   -o-transform: rotate(0deg) scale(0.8);
-}
-.s3.visible .p1:hover {
-  transform: rotate(0deg) scale(0.9);
-  -webkit-transform: rotate(0deg) scale(0.9);
-  -moz-transform: rotate(0deg) scale(0.9);
-  -ms-transform: rotate(0deg) scale(0.9);
-  -o-transform: rotate(0deg) scale(0.9);
 }
 
 @keyframes s3p1 {
@@ -389,13 +351,6 @@ html.ready .content {
   -moz-transform: rotate(0deg) scale(0.8);
   -ms-transform: rotate(0deg) scale(0.8);
   -o-transform: rotate(0deg) scale(0.8);
-}
-.s4.visible .p2:hover {
-  transform: rotate(0deg) scale(0.9);
-  -webkit-transform: rotate(0deg) scale(0.9);
-  -moz-transform: rotate(0deg) scale(0.9);
-  -ms-transform: rotate(0deg) scale(0.9);
-  -o-transform: rotate(0deg) scale(0.9);
 }
 
 @keyframes s4p2 {
@@ -446,10 +401,6 @@ html.ready .content {
 .button.g {
   background: #7cc754;
   color: #fff;
-}
-.button:hover {
-  animation: btnh 1s ease-in-out infinite alternate forwards;
-  -webkit-animation: btnh 1s ease-in-out infinite alternate forwards;
 }
 
 @keyframes btnh {
@@ -589,4 +540,54 @@ html.ready .content {
   background: url("../img/google.png") center center no-repeat;
   background-size: contain;
   cursor: pointer;
+}
+
+html:not(.mobile) .s1.visible .p1:hover {
+  z-index: 17;
+  transform: rotate(-20deg) scale(0.8);
+  -webkit-transform: rotate(-20deg) scale(0.8);
+  -moz-transform: rotate(-20deg) scale(0.8);
+  -ms-transform: rotate(-20deg) scale(0.8);
+  -o-transform: rotate(-20deg) scale(0.8);
+}
+html:not(.mobile) .s1.visible .p2:hover {
+  z-index: 17;
+  transform: rotate(0deg) scale(0.9);
+  -webkit-transform: rotate(0deg) scale(0.9);
+  -moz-transform: rotate(0deg) scale(0.9);
+  -ms-transform: rotate(0deg) scale(0.9);
+  -o-transform: rotate(0deg) scale(0.9);
+}
+html:not(.mobile) .s1.visible .p3:hover {
+  z-index: 17;
+  transform: rotate(20deg) scale(0.8);
+  -webkit-transform: rotate(20deg) scale(0.8);
+  -moz-transform: rotate(20deg) scale(0.8);
+  -ms-transform: rotate(20deg) scale(0.8);
+  -o-transform: rotate(20deg) scale(0.8);
+}
+html:not(.mobile) .s2.visible .p3:hover {
+  transform: rotate(0deg) scale(0.9);
+  -webkit-transform: rotate(0deg) scale(0.9);
+  -moz-transform: rotate(0deg) scale(0.9);
+  -ms-transform: rotate(0deg) scale(0.9);
+  -o-transform: rotate(0deg) scale(0.9);
+}
+html:not(.mobile) .s3.visible .p1:hover {
+  transform: rotate(0deg) scale(0.9);
+  -webkit-transform: rotate(0deg) scale(0.9);
+  -moz-transform: rotate(0deg) scale(0.9);
+  -ms-transform: rotate(0deg) scale(0.9);
+  -o-transform: rotate(0deg) scale(0.9);
+}
+html:not(.mobile) .s4.visible .p2:hover {
+  transform: rotate(0deg) scale(0.9);
+  -webkit-transform: rotate(0deg) scale(0.9);
+  -moz-transform: rotate(0deg) scale(0.9);
+  -ms-transform: rotate(0deg) scale(0.9);
+  -o-transform: rotate(0deg) scale(0.9);
+}
+html:not(.mobile) .button:hover {
+  animation: btnh 1s ease-in-out infinite alternate forwards;
+  -webkit-animation: btnh 1s ease-in-out infinite alternate forwards;
 }

@@ -62,6 +62,7 @@
 		$section3 = $('.section.s3');
 		$section4 = $('.section.s4');
 
+		$('html').toggleClass('mobile', isTouchDevice());
 		$('html').toggleClass('ready', true);
 		$window.on('scroll', onWindowScroll);
 		$('.apple, .google, .text .button').on('click', function () {
@@ -78,6 +79,11 @@
 
 		onWindowScroll();
 	})();
+
+	function isTouchDevice () {
+		try { document.createEvent("TouchEvent"); return true; }
+		catch (e) { return false; }
+	}
 
 	function onWindowScroll () {
 		windowWidth = $window.width();
