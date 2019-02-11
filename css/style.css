@@ -177,7 +177,7 @@ html.ready .content {
 
 .s1.visible .p1 {
   opacity: 1;
-  animation: s1p1 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: s1p1 2.5s ease-in-out;
   top: 250px;
   left: calc(50% - 190px - 50px);
   transform: rotate(-16deg) scale(0.7);
@@ -185,12 +185,12 @@ html.ready .content {
   -moz-transform: rotate(-16deg) scale(0.7);
   -ms-transform: rotate(-16deg) scale(0.7);
   -o-transform: rotate(-16deg) scale(0.7);
-  -webkit-animation: s1p1 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-animation: s1p1 2.5s ease-in-out;
 }
 .s1.visible .p3 {
   opacity: 1;
-  animation: s1p3 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -webkit-animation: s1p3 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: s1p3 2.5s ease-in-out;
+  -webkit-animation: s1p3 2.5s ease-in-out;
   top: 190px;
   right: calc(50% - 190px - 98px);
   transform: rotate(20deg) scale(0.7);
@@ -242,8 +242,8 @@ html.ready .content {
 }
 .s2.visible .p3 {
   opacity: 1;
-  animation: s2p3 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -webkit-animation: s2p3 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: s2p3 1.5s ease-in-out;
+  -webkit-animation: s2p3 1.5s ease-in-out;
   top: 30px;
   right: 0;
   transform: rotate(0deg) scale(0.7);
@@ -275,8 +275,8 @@ html.ready .content {
 }
 .s3.visible .p1 {
   opacity: 1;
-  animation: s3p1 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -webkit-animation: s3p1 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: s3p1 1.5s ease-in-out;
+  -webkit-animation: s3p1 1.5s ease-in-out;
   top: 30px;
   left: 0;
   transform: rotate(0deg) scale(0.7);
@@ -308,8 +308,8 @@ html.ready .content {
 }
 .s4.visible .p2 {
   opacity: 1;
-  animation: s4p2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -webkit-animation: s4p2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: s4p2 1.5s ease-in-out;
+  -webkit-animation: s4p2 1.5s ease-in-out;
   top: 30px;
   left: initial;
   right: 0;
