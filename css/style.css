@@ -153,6 +153,11 @@ html.ready .content {
   position: absolute;
   z-index: 15;
   top: 30px;
+  transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -ms-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate3d(0px, 0px, 0px);
 }
 .phone.p1 {
   background: url("../img/app1.png") center center no-repeat;
