@@ -87,7 +87,7 @@
 
 	function onWindowScroll () {
 		windowWidth = $window.width();
-		windowHeight = $window.height();
+		windowHeight = 850; // $window.height();
 		rootScrollTop = $('html')[0].scrollTop || $('body')[0].scrollTop || 0;
 		section1Top = $section1[0].offsetTop - rootScrollTop;
 		section2Top = $section2[0].offsetTop - rootScrollTop;

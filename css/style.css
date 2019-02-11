@@ -149,6 +149,7 @@ html.ready .content {
 
 .phone {
   display: block;
+  opacity: 0;
   position: absolute;
   z-index: 15;
   top: 30px;
@@ -163,7 +164,8 @@ html.ready .content {
   background: url("../img/app2.png") center center no-repeat;
   width: 381px;
   height: 742px;
-  left: calc(50% - 190px);
+  left: initial;
+  right: 0;
 }
 .phone.p3 {
   background: url("../img/app3.png") center center no-repeat;
@@ -174,26 +176,28 @@ html.ready .content {
 }
 
 .s1.visible .p1 {
+  opacity: 1;
   animation: s1p1 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   top: 250px;
   left: calc(50% - 190px - 50px);
-  transform: rotate(-25deg) scale(0.6);
-  -webkit-transform: rotate(-25deg) scale(0.6);
-  -moz-transform: rotate(-25deg) scale(0.6);
-  -ms-transform: rotate(-25deg) scale(0.6);
-  -o-transform: rotate(-25deg) scale(0.6);
+  transform: rotate(-16deg) scale(0.7);
+  -webkit-transform: rotate(-16deg) scale(0.7);
+  -moz-transform: rotate(-16deg) scale(0.7);
+  -ms-transform: rotate(-16deg) scale(0.7);
+  -o-transform: rotate(-16deg) scale(0.7);
   -webkit-animation: s1p1 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .s1.visible .p3 {
+  opacity: 1;
   animation: s1p3 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-animation: s1p3 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  top: 250px;
-  right: calc(50% - 190px - 50px);
-  transform: rotate(10deg) scale(0.6);
-  -webkit-transform: rotate(10deg) scale(0.6);
-  -moz-transform: rotate(10deg) scale(0.6);
-  -ms-transform: rotate(10deg) scale(0.6);
-  -o-transform: rotate(10deg) scale(0.6);
+  top: 190px;
+  right: calc(50% - 190px - 98px);
+  transform: rotate(20deg) scale(0.7);
+  -webkit-transform: rotate(20deg) scale(0.7);
+  -moz-transform: rotate(20deg) scale(0.7);
+  -ms-transform: rotate(20deg) scale(0.7);
+  -o-transform: rotate(20deg) scale(0.7);
 }
 
 @keyframes s1p1 {
@@ -209,11 +213,11 @@ html.ready .content {
   to {
     top: 250px;
     left: calc(50% - 190px - 50px);
-    transform: rotate(-25deg) scale(0.6);
-    -webkit-transform: rotate(-25deg) scale(0.6);
-    -moz-transform: rotate(-25deg) scale(0.6);
-    -ms-transform: rotate(-25deg) scale(0.6);
-    -o-transform: rotate(-25deg) scale(0.6);
+    transform: rotate(-16deg) scale(0.7);
+    -webkit-transform: rotate(-16deg) scale(0.7);
+    -moz-transform: rotate(-16deg) scale(0.7);
+    -ms-transform: rotate(-16deg) scale(0.7);
+    -o-transform: rotate(-16deg) scale(0.7);
   }
 }
 @keyframes s1p3 {
@@ -227,25 +231,26 @@ html.ready .content {
     -o-transform: rotate(-30deg) scale(1);
   }
   to {
-    top: 250px;
-    right: calc(50% - 190px - 50px);
-    transform: rotate(10deg) scale(0.6);
-    -webkit-transform: rotate(10deg) scale(0.6);
-    -moz-transform: rotate(10deg) scale(0.6);
-    -ms-transform: rotate(10deg) scale(0.6);
-    -o-transform: rotate(10deg) scale(0.6);
+    top: 191px;
+    right: calc(50% - 190px - 98px);
+    transform: rotate(20deg) scale(0.7);
+    -webkit-transform: rotate(20deg) scale(0.7);
+    -moz-transform: rotate(20deg) scale(0.7);
+    -ms-transform: rotate(20deg) scale(0.7);
+    -o-transform: rotate(20deg) scale(0.7);
   }
 }
 .s2.visible .p3 {
+  opacity: 1;
   animation: s2p3 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-animation: s2p3 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   top: 30px;
   right: 0;
-  transform: rotate(0deg) scale(0.6);
-  -webkit-transform: rotate(0deg) scale(0.6);
-  -moz-transform: rotate(0deg) scale(0.6);
-  -ms-transform: rotate(0deg) scale(0.6);
-  -o-transform: rotate(0deg) scale(0.6);
+  transform: rotate(0deg) scale(0.7);
+  -webkit-transform: rotate(0deg) scale(0.7);
+  -moz-transform: rotate(0deg) scale(0.7);
+  -ms-transform: rotate(0deg) scale(0.7);
+  -o-transform: rotate(0deg) scale(0.7);
 }
 
 @keyframes s2p3 {
@@ -261,23 +266,24 @@ html.ready .content {
   to {
     top: 30px;
     right: 0;
-    transform: rotate(0deg) scale(0.6);
-    -webkit-transform: rotate(0deg) scale(0.6);
-    -moz-transform: rotate(0deg) scale(0.6);
-    -ms-transform: rotate(0deg) scale(0.6);
-    -o-transform: rotate(0deg) scale(0.6);
+    transform: rotate(0deg) scale(0.7);
+    -webkit-transform: rotate(0deg) scale(0.7);
+    -moz-transform: rotate(0deg) scale(0.7);
+    -ms-transform: rotate(0deg) scale(0.7);
+    -o-transform: rotate(0deg) scale(0.7);
   }
 }
 .s3.visible .p1 {
+  opacity: 1;
   animation: s3p1 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-animation: s3p1 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   top: 30px;
   left: 0;
-  transform: rotate(0deg) scale(0.6);
-  -webkit-transform: rotate(0deg) scale(0.6);
-  -moz-transform: rotate(0deg) scale(0.6);
-  -ms-transform: rotate(0deg) scale(0.6);
-  -o-transform: rotate(0deg) scale(0.6);
+  transform: rotate(0deg) scale(0.7);
+  -webkit-transform: rotate(0deg) scale(0.7);
+  -moz-transform: rotate(0deg) scale(0.7);
+  -ms-transform: rotate(0deg) scale(0.7);
+  -o-transform: rotate(0deg) scale(0.7);
 }
 
 @keyframes s3p1 {
@@ -293,24 +299,25 @@ html.ready .content {
   to {
     top: 30px;
     left: 0;
-    transform: rotate(0deg) scale(0.6);
-    -webkit-transform: rotate(0deg) scale(0.6);
-    -moz-transform: rotate(0deg) scale(0.6);
-    -ms-transform: rotate(0deg) scale(0.6);
-    -o-transform: rotate(0deg) scale(0.6);
+    transform: rotate(0deg) scale(0.7);
+    -webkit-transform: rotate(0deg) scale(0.7);
+    -moz-transform: rotate(0deg) scale(0.7);
+    -ms-transform: rotate(0deg) scale(0.7);
+    -o-transform: rotate(0deg) scale(0.7);
   }
 }
 .s4.visible .p2 {
+  opacity: 1;
   animation: s4p2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-animation: s4p2 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   top: 30px;
   left: initial;
   right: 0;
-  transform: rotate(0deg) scale(0.6);
-  -webkit-transform: rotate(0deg) scale(0.6);
-  -moz-transform: rotate(0deg) scale(0.6);
-  -ms-transform: rotate(0deg) scale(0.6);
-  -o-transform: rotate(0deg) scale(0.6);
+  transform: rotate(0deg) scale(0.7);
+  -webkit-transform: rotate(0deg) scale(0.7);
+  -moz-transform: rotate(0deg) scale(0.7);
+  -ms-transform: rotate(0deg) scale(0.7);
+  -o-transform: rotate(0deg) scale(0.7);
 }
 
 @keyframes s4p2 {
@@ -326,11 +333,11 @@ html.ready .content {
   to {
     top: 30px;
     right: 0;
-    transform: rotate(0deg) scale(0.6);
-    -webkit-transform: rotate(0deg) scale(0.6);
-    -moz-transform: rotate(0deg) scale(0.6);
-    -ms-transform: rotate(0deg) scale(0.6);
-    -o-transform: rotate(0deg) scale(0.6);
+    transform: rotate(0deg) scale(0.7);
+    -webkit-transform: rotate(0deg) scale(0.7);
+    -moz-transform: rotate(0deg) scale(0.7);
+    -ms-transform: rotate(0deg) scale(0.7);
+    -o-transform: rotate(0deg) scale(0.7);
   }
 }
 .top {
@@ -502,51 +509,6 @@ html.ready .content {
   cursor: pointer;
 }
 
-html:not(.mobile) .s1.visible .p1:hover {
-  z-index: 17;
-  transform: rotate(-25deg) scale(0.9);
-  -webkit-transform: rotate(-25deg) scale(0.9);
-  -moz-transform: rotate(-25deg) scale(0.9);
-  -ms-transform: rotate(-25deg) scale(0.9);
-  -o-transform: rotate(-25deg) scale(0.9);
-}
-html:not(.mobile) .s1.visible .p2:hover {
-  z-index: 17;
-  transform: rotate(0deg) scale(0.9);
-  -webkit-transform: rotate(0deg) scale(0.9);
-  -moz-transform: rotate(0deg) scale(0.9);
-  -ms-transform: rotate(0deg) scale(0.9);
-  -o-transform: rotate(0deg) scale(0.9);
-}
-html:not(.mobile) .s1.visible .p3:hover {
-  z-index: 17;
-  transform: rotate(10deg) scale(0.9);
-  -webkit-transform: rotate(10deg) scale(0.9);
-  -moz-transform: rotate(10deg) scale(0.9);
-  -ms-transform: rotate(10deg) scale(0.9);
-  -o-transform: rotate(10deg) scale(0.9);
-}
-html:not(.mobile) .s2.visible .p3:hover {
-  transform: rotate(0deg) scale(0.9);
-  -webkit-transform: rotate(0deg) scale(0.9);
-  -moz-transform: rotate(0deg) scale(0.9);
-  -ms-transform: rotate(0deg) scale(0.9);
-  -o-transform: rotate(0deg) scale(0.9);
-}
-html:not(.mobile) .s3.visible .p1:hover {
-  transform: rotate(0deg) scale(0.9);
-  -webkit-transform: rotate(0deg) scale(0.9);
-  -moz-transform: rotate(0deg) scale(0.9);
-  -ms-transform: rotate(0deg) scale(0.9);
-  -o-transform: rotate(0deg) scale(0.9);
-}
-html:not(.mobile) .s4.visible .p2:hover {
-  transform: rotate(0deg) scale(0.9);
-  -webkit-transform: rotate(0deg) scale(0.9);
-  -moz-transform: rotate(0deg) scale(0.9);
-  -ms-transform: rotate(0deg) scale(0.9);
-  -o-transform: rotate(0deg) scale(0.9);
-}
 html:not(.mobile) .button:hover {
   animation: btnh 1s ease-in-out infinite alternate forwards;
   -webkit-animation: btnh 1s ease-in-out infinite alternate forwards;
