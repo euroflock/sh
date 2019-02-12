@@ -177,7 +177,6 @@ html.ready .content {
 
 .s1.visible .p1 {
   opacity: 1;
-  animation: s1p1 2.5s ease-in-out;
   top: 250px;
   left: calc(50% - 190px - 50px);
   transform: translateZ(0) rotate(-16deg) scale(0.7);
@@ -185,12 +184,9 @@ html.ready .content {
   -moz-transform: translateZ(0) rotate(-16deg) scale(0.7);
   -ms-transform: translateZ(0) rotate(-16deg) scale(0.7);
   -o-transform: translateZ(0) rotate(-16deg) scale(0.7);
-  -webkit-animation: s1p1 2.5s ease-in-out;
 }
 .s1.visible .p3 {
   opacity: 1;
-  animation: s1p3 2.5s ease-in-out;
-  -webkit-animation: s1p3 2.5s ease-in-out;
   top: 190px;
   right: calc(50% - 190px - 98px);
   transform: translateZ(0) rotate(20deg) scale(0.7);
@@ -242,8 +238,6 @@ html.ready .content {
 }
 .s2.visible .p3 {
   opacity: 1;
-  animation: s2p3 1.5s ease-in-out;
-  -webkit-animation: s2p3 1.5s ease-in-out;
   top: 30px;
   right: 0;
   transform: translateZ(0) rotate(0deg) scale(0.7);
@@ -275,8 +269,6 @@ html.ready .content {
 }
 .s3.visible .p1 {
   opacity: 1;
-  animation: s3p1 1.5s ease-in-out;
-  -webkit-animation: s3p1 1.5s ease-in-out;
   top: 30px;
   left: 0;
   transform: translateZ(0) rotate(0deg) scale(0.7);
@@ -308,8 +300,6 @@ html.ready .content {
 }
 .s4.visible .p2 {
   opacity: 1;
-  animation: s4p2 1.5s ease-in-out;
-  -webkit-animation: s4p2 1.5s ease-in-out;
   top: 30px;
   left: initial;
   right: 0;
@@ -507,9 +497,4 @@ html.ready .content {
   background: url("../img/google.png") center center no-repeat;
   background-size: contain;
   cursor: pointer;
-}
-
-html:not(.mobile) .button:hover {
-  animation: btnh 1s ease-in-out infinite alternate forwards;
-  -webkit-animation: btnh 1s ease-in-out infinite alternate forwards;
 }

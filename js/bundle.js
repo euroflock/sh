@@ -64,12 +64,12 @@
 
 		$('html').toggleClass('mobile', isTouchDevice());
 		$('html').toggleClass('ready', true);
-		$window.on('scroll', onWindowScroll);
+		// $window.on('scroll', onWindowScroll);
 		$('.apple, .google, .text .button').on('click', function () {
-			$root.animate({ scrollTop: $(document).height() }, 4000);
+			$root.animate({ scrollTop: $(document).height() - $window.height() }, 2000, 'easeInOutExpo', function () { console.log('bottom'); });
 		});
 		$('.bottom .button').on('click', function () {
-			$root.animate({ scrollTop: 0 }, 4000);
+			$root.animate({ scrollTop: 0 }, 2000, 'easeInOutExpo', function () { console.log('top'); });
 		});
 		$('.links').on('click', '.link', function (e) {
 			var $el = $(e.target);
@@ -77,7 +77,7 @@
 			$el.toggleClass('current', true);
 		});
 
-		onWindowScroll();
+		// onWindowScroll();
 	})();
 
 	function isTouchDevice () {
@@ -85,22 +85,22 @@
 		catch (e) { return false; }
 	}
 
-	function onWindowScroll () {
-		windowWidth = $window.width();
-		windowHeight = 850; // $window.height();
-		rootScrollTop = $('html')[0].scrollTop || $('body')[0].scrollTop || 0;
-		section1Top = $section1[0].offsetTop - rootScrollTop;
-		section2Top = $section2[0].offsetTop - rootScrollTop;
-		section3Top = $section3[0].offsetTop - rootScrollTop;
-		section4Top = $section4[0].offsetTop - rootScrollTop;
-		refreshViewState();
-	}
+	// function onWindowScroll () {
+	// 	windowWidth = $window.width();
+	// 	windowHeight = 850; // $window.height();
+	// 	rootScrollTop = $('html')[0].scrollTop || $('body')[0].scrollTop || 0;
+	// 	section1Top = $section1[0].offsetTop - rootScrollTop;
+	// 	section2Top = $section2[0].offsetTop - rootScrollTop;
+	// 	section3Top = $section3[0].offsetTop - rootScrollTop;
+	// 	section4Top = $section4[0].offsetTop - rootScrollTop;
+	// 	refreshViewState();
+	// }
 
 	function refreshViewState () {
-		$section1.toggleClass('visible', (section1Top + windowHeight >= 0 && section1Top < windowHeight));
-		$section2.toggleClass('visible', (section2Top + windowHeight >= 0 && section2Top < windowHeight));
-		$section3.toggleClass('visible', (section3Top + windowHeight >= 0 && section3Top < windowHeight));
-		$section4.toggleClass('visible', (section4Top + windowHeight >= 0 && section4Top < windowHeight));
+		// $section1.toggleClass('visible', (section1Top + windowHeight >= 0 && section1Top < windowHeight));
+		// $section2.toggleClass('visible', (section2Top + windowHeight >= 0 && section2Top < windowHeight));
+		// $section3.toggleClass('visible', (section3Top + windowHeight >= 0 && section3Top < windowHeight));
+		// $section4.toggleClass('visible', (section4Top + windowHeight >= 0 && section4Top < windowHeight));
 	}
 
 /***/ })
