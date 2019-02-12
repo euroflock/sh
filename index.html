@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="root">
+<html class="root mobile">
     <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="apple-mobile-web-app-status-bar-style" content="white"/>
@@ -25,7 +25,7 @@
 		<meta name="theme-color" content="#ffffff">
 		<title>Sugar Help</title>
 
-		<meta name="viewport" content="initial-scale=0.5, maximum-scale=1.0, user-scalable=no, width=device-width, minimal-ui">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, minimal-ui">
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
@@ -33,6 +33,7 @@
     <body>
 		<div class="content">
 			<div class="top">
+				<div class="menu"><i></i><i></i><i></i></div>
 				<div class="logo">Sugar Help</div>
 				<div class="links">
 					<div class="link home current">Home</div>
@@ -40,17 +41,22 @@
 					<div class="link info">Info</div>
 					<div class="contact">Contact Us</div>
 				</div>
+				<div class="access">Early<br />Access</div>
 			</div>
 			<div class="sections-wrap">
 				<div class="section s1 visible">
+					<div class="phone p3"></div>
+					<div class="phone p1"></div>
+					<!--<div class="phone p2"></div>-->
 					<h1>Your Personalized Mobile Assistant For Diabetic</h1>
 					<div class="apps">
 						<div class="apple"></div>
 						<div class="google"></div>
 					</div>
-					<div class="phone p3"></div>
-					<div class="phone p1"></div>
-					<!--<div class="phone p2"></div>-->
+					<div class="subscribe">
+						<input type="email" placeholder="EMAIL ADDRESS" />
+						<div class="button r">Send</div>
+					</div>
 				</div>
 				<div class="section s2 visible">
 					<div class="text left">
@@ -80,9 +86,13 @@
 			<div class="back b2"></div>
 			<div class="back b1"></div>
 			<div class="bottom">
-					<h1>Subscribe on Updates</h1>
-					<input type="email" placeholder="EMAIL" /><br />
-					<div class="button g">Subscribe</div>
+				<h1>Subscribe on Updates</h1>
+				<input type="email" placeholder="EMAIL" /><br />
+				<div class="button g">Subscribe</div>
+				<div class="subscribe">
+					<input type="email" placeholder="EMAIL ADDRESS" />
+					<div class="button r">Send</div>
+				</div>
 			</div>
 		</div>
 		<script type="text/javascript" src="js/bundle.js"></script>

@@ -66,17 +66,17 @@
 		$('html').toggleClass('mobile', isTouchDevice());
 		$('html').toggleClass('ready', true);
 		// $window.on('scroll', onWindowScroll);
-		$('.apple, .google, .text .button').on('click', function () {
+		$('.apple, .google, .menu, .access, .text .button').on('click', function () {
 			var max = $(document).height() - $window.height();
 			var distance = max - $root[0].scrollTop;
 			var duration = distance * durationByHeight / max;
-			$root.animate({ scrollTop: max }, duration, 'easeInOutExpo', function () { console.log('bottom'); });
+			$root.animate({ scrollTop: max }, duration, 'easeInOutExpo');
 		});
 		$('.bottom .button').on('click', function () {
 			var max = $(document).height() - $window.height();
 			var distance = $root[0].scrollTop;
 			var duration = distance * durationByHeight / max;
-			$root.animate({ scrollTop: 0 }, duration, 'easeInOutExpo', function () { console.log('top'); });
+			$root.animate({ scrollTop: 0 }, duration, 'easeInOutExpo');
 		});
 		$('.links').on('click', '.link', function (e) {
 			var $el = $(e.target);
