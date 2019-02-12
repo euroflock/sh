@@ -68,13 +68,15 @@
 		// $window.on('scroll', onWindowScroll);
 		$('.apple, .google, .menu, .access, .text .button').on('click', function () {
 			var max = $(document).height() - $window.height();
-			var distance = max - $root[0].scrollTop;
+			rootScrollTop = $('html')[0].scrollTop || $('body')[0].scrollTop || 0;
+			var distance = max - rootScrollTop;
 			var duration = distance * durationByHeight / max;
 			$root.animate({ scrollTop: max }, duration, 'easeInOutExpo');
 		});
 		$('.bottom .button').on('click', function () {
 			var max = $(document).height() - $window.height();
-			var distance = $root[0].scrollTop;
+			rootScrollTop = $('html')[0].scrollTop || $('body')[0].scrollTop || 0;
+			var distance = rootScrollTop;
 			var duration = distance * durationByHeight / max;
 			$root.animate({ scrollTop: 0 }, duration, 'easeInOutExpo');
 		});
