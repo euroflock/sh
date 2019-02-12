@@ -53,6 +53,7 @@
 
 	var $window, $root, $section1, $section2, $section3, $section4;
 	var windowWidth, windowHeight, rootScrollTop, section1Top, section2Top, section3Top, section4Top;
+	var durationByHeight = 2000;
 
 	(function AppEntryPoint() {
 		$window = $(window);
@@ -66,10 +67,16 @@
 		$('html').toggleClass('ready', true);
 		// $window.on('scroll', onWindowScroll);
 		$('.apple, .google, .text .button').on('click', function () {
-			$root.animate({ scrollTop: $(document).height() - $window.height() }, 2000, 'easeInOutExpo', function () { console.log('bottom'); });
+			var max = $(document).height() - $window.height();
+			var distance = max - $root[0].scrollTop;
+			var duration = distance * durationByHeight / max;
+			$root.animate({ scrollTop: max }, duration, 'easeInOutExpo', function () { console.log('bottom'); });
 		});
 		$('.bottom .button').on('click', function () {
-			$root.animate({ scrollTop: 0 }, 2000, 'easeInOutExpo', function () { console.log('top'); });
+			var max = $(document).height() - $window.height();
+			var distance = $root[0].scrollTop;
+			var duration = distance * durationByHeight / max;
+			$root.animate({ scrollTop: 0 }, duration, 'easeInOutExpo', function () { console.log('top'); });
 		});
 		$('.links').on('click', '.link', function (e) {
 			var $el = $(e.target);
