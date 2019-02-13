@@ -51,30 +51,24 @@
 /* 1 */
 /***/ (function(module, exports) {
 
-	var $window, $root, $section1, $section2, $section3, $section4;
-	var windowWidth, windowHeight, rootScrollTop, section1Top, section2Top, section3Top, section4Top;
+	var $root;
+	var rootScrollTop;
 	var durationByHeight = 2000;
 
 	(function AppEntryPoint() {
-		$window = $(window);
 		$root = $('html, body');
-		$section1 = $('.section.s1');
-		$section2 = $('.section.s2');
-		$section3 = $('.section.s3');
-		$section4 = $('.section.s4');
 
 		$('html').toggleClass('mobile', isTouchDevice());
 		$('html').toggleClass('ready', true);
-		// $window.on('scroll', onWindowScroll);
 		$('.apple, .google, .menu, .access, .text .button').on('click', function () {
-			var max = $(document).height() - $window.height();
+			var max = $(document).height() - $(window).height();
 			rootScrollTop = $('html')[0].scrollTop || $('body')[0].scrollTop || 0;
 			var distance = max - rootScrollTop;
 			var duration = distance * durationByHeight / max;
 			$root.animate({ scrollTop: max }, duration, 'easeInOutExpo');
 		});
 		$('.bottom .button').on('click', function () {
-			var max = $(document).height() - $window.height();
+			var max = $(document).height() - $(window).height();
 			rootScrollTop = $('html')[0].scrollTop || $('body')[0].scrollTop || 0;
 			var distance = rootScrollTop;
 			var duration = distance * durationByHeight / max;
@@ -85,8 +79,6 @@
 			$el.parent().find('.link').toggleClass('current', false);
 			$el.toggleClass('current', true);
 		});
-
-		// onWindowScroll();
 	})();
 
 	function isTouchDevice () {
@@ -94,23 +86,6 @@
 		catch (e) { return false; }
 	}
 
-	// function onWindowScroll () {
-	// 	windowWidth = $window.width();
-	// 	windowHeight = 850; // $window.height();
-	// 	rootScrollTop = $('html')[0].scrollTop || $('body')[0].scrollTop || 0;
-	// 	section1Top = $section1[0].offsetTop - rootScrollTop;
-	// 	section2Top = $section2[0].offsetTop - rootScrollTop;
-	// 	section3Top = $section3[0].offsetTop - rootScrollTop;
-	// 	section4Top = $section4[0].offsetTop - rootScrollTop;
-	// 	refreshViewState();
-	// }
-
-	function refreshViewState () {
-		// $section1.toggleClass('visible', (section1Top + windowHeight >= 0 && section1Top < windowHeight));
-		// $section2.toggleClass('visible', (section2Top + windowHeight >= 0 && section2Top < windowHeight));
-		// $section3.toggleClass('visible', (section3Top + windowHeight >= 0 && section3Top < windowHeight));
-		// $section4.toggleClass('visible', (section4Top + windowHeight >= 0 && section4Top < windowHeight));
-	}
 
 /***/ })
 /******/ ]);

@@ -179,43 +179,43 @@ html.ready .content {
   opacity: 1;
   top: 250px;
   left: calc(50% - 190px - 50px);
-  transform: translateZ(0) rotate(-16deg) scale(0.7);
-  -webkit-transform: translateZ(0) rotate(-16deg) scale(0.7);
-  -moz-transform: translateZ(0) rotate(-16deg) scale(0.7);
-  -ms-transform: translateZ(0) rotate(-16deg) scale(0.7);
-  -o-transform: translateZ(0) rotate(-16deg) scale(0.7);
+  transform: translateZ(0) rotate(-16deg) scale(0.65);
+  -webkit-transform: translateZ(0) rotate(-16deg) scale(0.65);
+  -moz-transform: translateZ(0) rotate(-16deg) scale(0.65);
+  -ms-transform: translateZ(0) rotate(-16deg) scale(0.65);
+  -o-transform: translateZ(0) rotate(-16deg) scale(0.65);
 }
 .s1.visible .p3 {
   opacity: 1;
   top: 190px;
   right: calc(50% - 190px - 98px);
-  transform: translateZ(0) rotate(20deg) scale(0.7);
-  -webkit-transform: translateZ(0) rotate(20deg) scale(0.7);
-  -moz-transform: translateZ(0) rotate(20deg) scale(0.7);
-  -ms-transform: translateZ(0) rotate(20deg) scale(0.7);
-  -o-transform: translateZ(0) rotate(20deg) scale(0.7);
+  transform: translateZ(0) rotate(20deg) scale(0.65);
+  -webkit-transform: translateZ(0) rotate(20deg) scale(0.65);
+  -moz-transform: translateZ(0) rotate(20deg) scale(0.65);
+  -ms-transform: translateZ(0) rotate(20deg) scale(0.65);
+  -o-transform: translateZ(0) rotate(20deg) scale(0.65);
 }
 
 .s2.visible .p3 {
   opacity: 1;
   top: 30px;
   right: 0;
-  transform: translateZ(0) rotate(0deg) scale(0.7);
-  -webkit-transform: translateZ(0) rotate(0deg) scale(0.7);
-  -moz-transform: translateZ(0) rotate(0deg) scale(0.7);
-  -ms-transform: translateZ(0) rotate(0deg) scale(0.7);
-  -o-transform: translateZ(0) rotate(0deg) scale(0.7);
+  transform: translateZ(0) rotate(0deg) scale(0.65);
+  -webkit-transform: translateZ(0) rotate(0deg) scale(0.65);
+  -moz-transform: translateZ(0) rotate(0deg) scale(0.65);
+  -ms-transform: translateZ(0) rotate(0deg) scale(0.65);
+  -o-transform: translateZ(0) rotate(0deg) scale(0.65);
 }
 
 .s3.visible .p1 {
   opacity: 1;
   top: 30px;
   left: 0;
-  transform: translateZ(0) rotate(0deg) scale(0.7);
-  -webkit-transform: translateZ(0) rotate(0deg) scale(0.7);
-  -moz-transform: translateZ(0) rotate(0deg) scale(0.7);
-  -ms-transform: translateZ(0) rotate(0deg) scale(0.7);
-  -o-transform: translateZ(0) rotate(0deg) scale(0.7);
+  transform: translateZ(0) rotate(0deg) scale(0.65);
+  -webkit-transform: translateZ(0) rotate(0deg) scale(0.65);
+  -moz-transform: translateZ(0) rotate(0deg) scale(0.65);
+  -ms-transform: translateZ(0) rotate(0deg) scale(0.65);
+  -o-transform: translateZ(0) rotate(0deg) scale(0.65);
 }
 
 .s4.visible .p2 {
@@ -223,11 +223,11 @@ html.ready .content {
   top: 30px;
   left: initial;
   right: 0;
-  transform: translateZ(0) rotate(0deg) scale(0.7);
-  -webkit-transform: translateZ(0) rotate(0deg) scale(0.7);
-  -moz-transform: translateZ(0) rotate(0deg) scale(0.7);
-  -ms-transform: translateZ(0) rotate(0deg) scale(0.7);
-  -o-transform: translateZ(0) rotate(0deg) scale(0.7);
+  transform: translateZ(0) rotate(0deg) scale(0.65);
+  -webkit-transform: translateZ(0) rotate(0deg) scale(0.65);
+  -moz-transform: translateZ(0) rotate(0deg) scale(0.65);
+  -ms-transform: translateZ(0) rotate(0deg) scale(0.65);
+  -o-transform: translateZ(0) rotate(0deg) scale(0.65);
 }
 
 .top {
@@ -475,7 +475,33 @@ html.mobile .s1 .text,
 html.mobile .s3 .text,
 html.mobile .bottom .text {
   background: #7cc754;
-  color: #fff;
+  color: #fff !important;
+}
+html.mobile .s1 .text h2,
+html.mobile .s3 .text h2,
+html.mobile .bottom .text h2 {
+  text-transform: uppercase;
+  font-size: 30px !important;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+html.mobile .s1 .text p,
+html.mobile .s3 .text p,
+html.mobile .bottom .text p {
+  font-size: 18px !important;
+  font-weight: 300;
+}
+html.mobile .s1 .button,
+html.mobile .s3 .button,
+html.mobile .bottom .button {
+  background: #fff;
+  margin-top: 20px;
+  color: #7cc754;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
 html.mobile .s2,
 html.mobile .s4 {
@@ -485,5 +511,75 @@ html.mobile .s4 {
 html.mobile .s2 .text,
 html.mobile .s4 .text {
   background: #fff;
+  color: #797979 !important;
+}
+html.mobile .s2 .text h2,
+html.mobile .s4 .text h2 {
+  text-transform: uppercase;
+  font-size: 30px !important;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+html.mobile .s2 .text p,
+html.mobile .s4 .text p {
+  font-size: 18px !important;
+  font-weight: 300;
+}
+html.mobile .s2 .button,
+html.mobile .s4 .button {
+  background: #7cc754;
+  margin-top: 20px;
+  color: #fff;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+html.mobile .subscribe {
+  display: flex;
+  width: 300px;
+  margin: auto;
+  padding: 5px;
+  background: #fff;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+html.mobile .subscribe input {
+  background: transparent !important;
   color: #797979;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-top: 0;
+  border: none;
+  width: 200px;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+html.mobile .subscribe .button {
+  background: #F46d6d;
+  padding: 9px 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 0;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+html.mobile .bottom h2 {
+  text-transform: uppercase;
+  font-size: 30px !important;
+  font-weight: 700;
+  text-decoration: none !important;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
